@@ -1,8 +1,8 @@
-# 🚀 Projeto de Busca de Teorias da Conspiração
+# 🚀 Busca de Teorias da Conspiração - Imersão Dev Alura com Google Gemini
 
 ![Preview do Site](./caminho/para/imagem-do-site.png)
 
-Bem-vindo ao repositório do **Projeto da Alura de Busca de Teorias da Conspiração**! 🌐 Aqui você pode explorar as mais fascinantes e misteriosas teorias da conspiração conhecidas, tudo em um só lugar. A aplicação permite que os usuários pesquisem, descubram e leiam mais sobre esses tópicos intrigantes de forma rápida e fácil.
+Bem-vindo ao repositório do **Projeto de Busca de Teorias da Conspiração**! 🌐 Aqui você pode explorar as mais fascinantes e misteriosas teorias da conspiração conhecidas, tudo em um só lugar. A aplicação permite que os usuários pesquisem, descubram e leiam mais sobre esses tópicos intrigantes de forma rápida e fácil.
 
 ## 🔍 Sobre o Projeto
 
