@@ -371,18 +371,19 @@ footer {
     }
 
     section input {
-        width: 25rem;
+        width: 25rem; /* Ajusta o input para ser mais estreito */
     }
 
     .resultados-pesquisa {
         width: 40rem;
-        height: 40vh;
+        height: 40vh; /* Ajusta a altura do container de resultados */
     }
 
     .card {
-        width: 200px; /* Largura reduzida em telas menores */
+        width: 200px; /* Reduz a largura dos cards */
     }
 }
+
 
 @media (max-width: 480px) {
     h1 {
@@ -391,19 +392,20 @@ footer {
     }
 
     section input {
-        width: 17rem;
+        width: 17rem; /* Reduz a largura do campo de entrada */
     }
 
     section button {
-        padding: 0.6rem 1rem;
+        padding: 0.6rem 1rem; /* Reduz o tamanho do botão */
     }
 
     .resultados-pesquisa {
-        width: 90%;
+        width: 90%; /* Ajusta o tamanho do container de resultados */
         height: 35vh;
     }
 
     .card {
-        width: 150px; /* Largura reduzida em telas muito pequenas */
+        width: 150px; /* Reduz a largura dos cards para telas pequenas */
     }
 }
+
