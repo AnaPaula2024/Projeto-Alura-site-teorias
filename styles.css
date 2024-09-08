@@ -1,0 +1,409 @@
+/* Importa a fonte Chakra Petch do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* Estiliza o corpo da página */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden; /* Evita o scroll horizontal desnecessário */
+}
+
+body {
+    font-family: "Chakra Petch", sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o rodapé fique no fim */
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    }
+    
+body.loaded {
+    opacity: 1;
+    }
+    
+
+/* Estiliza o header */
+header {
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Estilo da logo no cabeçalho */
+header .logo {
+    width: 150px;
+    height: auto;
+    transition: transform 0.3s ease;
+    animation: pulsar 2s infinite;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-bottom: 20px; /* Adiciona um espaço abaixo da logo */
+}
+
+@keyframes pulsar {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.logo {
+    animation: pulsar 5s infinite; /* Tempo maior para pulsar devagar */
+}
+
+
+/* Estilo do título principal */
+h1 {
+    font-size: 2.5rem;
+    background: linear-gradient(45deg, #d9fcfc, #faf8f8); /* Gradiente de azul claro para branco */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    letter-spacing: 0.4rem;
+    margin: 20px 0 0 0; /* Adiciona um espaço acima do título */
+}
+
+/* Estiliza as seções da página */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+/* Estiliza inputs e botões */
+section input {
+    width: 80%; /* Utiliza 80% da largura da tela */
+    max-width: 30rem; 
+    border: none;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    margin-bottom: 1rem;
+    color: #45474B;
+    font-size: 1rem;
+}
+
+section button {
+    width: auto; /* O botão se ajusta automaticamente ao conteúdo */
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 1.5rem;
+    background-color: #30475E;
+    color: #F5F7F8;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease, color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra inicial suave */
+    position: relative; /* Para efeitos de texto */
+    z-index: 0;
+    overflow: hidden; /* Garante que a animação de gradiente funcione corretamente */
+    margin-bottom: 1rem;
+}
+
+section button:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(90deg, black, orange);
+    z-index: -1; /* Fica atrás do texto */
+    transition: left 0.3s ease;
+}
+
+section button:hover:before {
+    left: 0;
+}
+
+section button:hover {
+    background: linear-gradient(90deg, black, orange);
+    -webkit-background-clip: text;
+    background-clip: text;
+    transform: translateY(-5px); /* Efeito de elevação */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Sombra mais forte ao passar o mouse */
+}
+
+section button:active {
+    transform: translateY(0); /* Volta para a posição original ao clicar */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Reduz a sombra ao clicar */
+}
+
+
+/* Estilo do bloco de resultado */
+.item-resultado {
+    width: 90%; /* Usará 90% da largura da tela em dispositivos menores */
+    max-width: 60rem; /* Mantém 60rem em telas grandes */
+    height: auto;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 0.6rem;
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo levemente mais claro para cada item */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Borda sutil */
+    overflow: hidden; /* Garante que o conteúdo não ultrapasse os limites */
+    box-shadow: 0 8px 15px rgba(247, 245, 245, 0.2);
+    display: flex;             /* Usa flexbox */
+    flex-direction: row;       /* Coloca os itens em linha (imagem ao lado das informações) */
+    align-items: stretch;       /* Alinha verticalmente */
+    justify-content: space-between; /* Espaçamento entre os itens */
+    text-align: left;          /* Texto alinhado à esquerda */
+}
+
+/* Estilo da imagem no item de resultado */
+.item-resultado img {
+    max-width: 250px;           /* Limita a largura ao container */
+    max-height: 250px;         /* Limita a altura para evitar expansão */
+    object-fit:fill;         /* Mantém a proporção sem cortar a imagem */
+    border-radius: 0.6rem;     /* Bordas arredondadas */
+    margin-right: 1.5rem;      /* Espaço entre a imagem e as informações */
+}
+
+/* Container das informações (título, descrição e botão) */
+.item-resultado .info {
+    display: flex;
+    flex-direction: column;    /* Coloca o título, descrição e botão empilhados */
+    justify-content: center;   /* Centraliza verticalmente o conteúdo */
+    align-items: flex-start;   /* Alinha à esquerda */
+    width: 100%;               /* Ocupa o espaço restante */
+}
+
+/* Estilo do título no item de resultado */
+.item-resultado h2 {
+    font-size: 2rem; /* Tamanho do texto do título */
+    font-weight: bold; /* Deixa o título em negrito */
+    color: #f39c12; /* Cor do título */
+    margin-bottom: 0.5rem; /* Espaço entre o título e a descrição */
+}
+
+/* Estilo da descrição no item de resultado */
+.item-resultado p.descricao-meta {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: white; /* Texto em branco */
+    margin-bottom: 30px;
+}
+
+/* Estilo do link no item de resultado */
+.item-resultado a {
+    align-self: flex-end; /* Alinha o botão ao final à direita */
+    padding: 0.5rem 1rem;  /* Espaço interno do botão */
+    font-size: 10px;
+    font-weight: bold;
+    color: orange;         /* Cor inicial do link */
+    background-color: transparent; /* Fundo transparente */
+    border: 2px solid orange; /* Borda do botão */
+    border-radius: 0.4rem; /* Bordas arredondadas do botão */
+    text-decoration: none;
+    transition: color 0.3s ease, background-color 0.3s ease; /* Transições suaves */
+}
+
+.item-resultado a:hover {
+    color: white;            /* Cor do texto ao passar o mouse */
+    background-color: orange; /* Fundo do botão ao passar o mouse */
+}
+
+
+.mensagem-erro {
+    color: red;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+    box-shadow: 0 8px 15px rgba(247, 245, 245, 0.2);
+    background: rgba(0, 0, 0, 0.9); /* Fundo mais escuro dos cards */
+}
+
+
+/* Estiliza o fundo do vídeo */
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Mantém o vídeo atrás de todos os outros elementos */
+}
+
+.video-background video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que o vídeo cubra toda a tela sem distorção */
+}
+
+/* Estiliza a seção de curiosidades */
+.destaques {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+    color: #f39c12;
+    box-shadow: 0 8px 15px rgba(247, 245, 245, 0.2);
+}
+
+/* Container dos cards */
+.cards-container {
+    display: flex; /* Usa Flexbox para layout */
+    overflow-x: auto; /* Permite rolar horizontalmente se os cards não couberem */
+    padding: 10px; /* Espaçamento interno */
+    gap: 15px; /* Espaço entre os cards */
+    scroll-behavior: smooth; /* Rolagem suave */
+}
+
+
+/* Estilo dos cards */
+.card {
+    background: rgba(0, 0, 0, 0.9); /* Fundo mais escuro dos cards */
+    border-radius: 8px; /* Borda arredondada dos cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra com profundidade */
+    overflow: hidden; /* Para evitar que o conteúdo ultrapasse as bordas arredondadas */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave para efeitos de hover */
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 0.6rem;
+    color: #fff; /* Cor do texto dos cards */
+    width: 250px; /* Largura ajustada dos cards */
+    flex: 0 0 auto; /* Impede que os cards se redimensionem */
+    display: flex;
+    flex-direction: column; /* Permite que o conteúdo seja empilhado verticalmente */
+    justify-content: space-between; /* Espaça o conteúdo dentro do card */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+    margin: 0 10px;
+
+}
+
+.card img {
+    width: 100%;              /* Faz com que a imagem preencha 100% da largura do contêiner */
+    height: 150px;            /* Define uma altura fixa para todas as imagens */
+    object-fit: cover;        /* Garante que a imagem cubra a área do elemento, cortando se necessário */
+    display: block;           /* Remove o espaço indesejado abaixo da imagem */
+    border-radius: 0.6rem;    /* Adiciona cantos arredondados */
+    transition: transform 0.3s ease-in-out; /* Adiciona uma transição suave para efeitos de hover */
+}
+
+.card img:hover {
+    transform: scale(1.05);   /* Aumenta a imagem levemente ao passar o mouse */
+}
+
+
+.card h3 {
+    margin: 10px 0; /* Margem acima e abaixo do título */
+    font-size: 1.2em; /* Tamanho do texto do título */
+    font-weight: bold; /* Deixa o título em negrito */
+    color: #f39c12; /* Cor do título */
+    text-align: center; /* Alinha o texto do título ao centro */
+}
+
+.card p {
+    margin: 10px 0; /* Margem acima e abaixo do texto */
+    font-size: 0.9em; /* Tamanho do texto do parágrafo */
+    line-height: 1.4; /* Espaçamento entre linhas */
+}
+
+.card a {
+    color: #f39c12; /* Cor do link dentro do card */
+    text-decoration: none; /* Remove o sublinhado do link */
+    margin-top: 10px;
+    display: block; /* Faz com que o link ocupe uma linha completa */
+    text-align: center; /* Alinha o texto do link ao centro */
+    transition: transform 0.3s ease, color 0.3s ease; /* Suaviza a transformação e mudança de cor */
+}
+
+/* Efeito de hover para os cards */
+.card:hover {
+    transform: translateY(-10px); /* Move o card para cima quando o mouse passa sobre ele */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* Aumenta a sombra ao passar o mouse */
+}
+
+.card a:hover {
+    box-shadow: 0 8px 15px rgba(247, 245, 245, 0.2); /* Sombra mais forte ao passar o mouse */
+    border-radius: 0.6rem;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+    margin-top: auto;
+}
+
+.redes-sociais {
+    margin-top: 15px;
+}
+
+.redes-sociais a {
+    margin: 0 10px;
+    color: white;
+    font-size: 24px;
+    transition: transform 0.3s ease, color 0.3s ease; /* Suaviza a transformação e mudança de cor */
+
+}
+
+.redes-sociais a:hover {
+    color: #f39c12; /* Cor de destaque ao passar o mouse */
+    
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+    }
+
+    section input {
+        width: 25rem;
+    }
+
+    .resultados-pesquisa {
+        width: 40rem;
+        height: 40vh;
+    }
+
+    .card {
+        width: 200px; /* Largura reduzida em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+        letter-spacing: 0.1rem;
+    }
+
+    section input {
+        width: 17rem;
+    }
+
+    section button {
+        padding: 0.6rem 1rem;
+    }
+
+    .resultados-pesquisa {
+        width: 90%;
+        height: 35vh;
+    }
+
+    .card {
+        width: 150px; /* Largura reduzida em telas muito pequenas */
+    }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Teorias da Conspiração</title>
+</head>
+
+<body>
+    <!-- Container de vídeo de fundo -->
+    <div class="video-background">
+        <video autoplay loop muted preload>
+            <source src="video/teoria.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos HTML5.
+        </video>
+    </div>
+
+    <!-- Conteúdo da página -->
+    <header>
+        <img src="img/teoria.png" alt="Logo Teorias da Conspiração" class="logo">
+        <h1>Busque sobre teorias da conspiração</h1>
+    </header>
+    <main>
+        <section>
+            <input type="search" placeholder="Vamos lá! Encontre sua teoria." id="campo-pesquisa">
+            <button onclick="pesquisar()">Pesquisar</button>
+        </section>
+        <section class="resultados-pesquisa" id="resultados-pesquisa"></section>
+            <section class="destaques">
+                <h2>Destaques</h2>
+                <div id="cards-container" class="cards-container">
+                    <!-- Os cards serão inseridos aqui pelo JavaScript -->
+                </div>
+            </section> <!-- Fechamento correto do section -->    
+    </main>
+    <footer>
+        <p>2024 - Teorias da Conspiração. Todos os direitos reservados</p>
+        <div class="redes-sociais">
+            <a href="https://github.com/AnaPaula2024" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/ana-paula-pereira-viana-95293b171/" target="_blank"><i
+                    class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+    <script src="dados.js"></script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
