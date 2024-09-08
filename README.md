@@ -1,6 +1,7 @@
 # 🚀 Busca de Teorias da Conspiração - Imersão Dev Alura com Google Gemini
 
-![Preview do Site](./caminho/para/imagem-do-site.png)
+### Acesse o projeto online: [Meu Projeto no Vercel](https://projeto-alura-site-teorias.vercel.app/)
+
 
 Bem-vindo ao repositório do **Projeto de Busca de Teorias da Conspiração**! 🌐 Aqui você pode explorar as mais fascinantes e misteriosas teorias da conspiração conhecidas, tudo em um só lugar. A aplicação permite que os usuários pesquisem, descubram e leiam mais sobre esses tópicos intrigantes de forma rápida e fácil.
 
@@ -24,12 +25,6 @@ Este projeto foi construído usando as seguintes tecnologias:
 - **JavaScript (ES6+):** Lógica de busca e manipulação dinâmica de conteúdo.
 - **Font Awesome:** Ícones usados na interface para melhorar a experiência visual.
 - **Git & GitHub:** Controle de versão e colaboração.
-
-## 📸 Captura de Tela
-
-Abaixo está uma prévia da aplicação em ação:
-
-![Screenshot](./caminho/para/screenshot.png)
 
 ## ⚙️ Como Usar
 
@@ -74,7 +69,7 @@ Este projeto está licenciado sob a licença MIT. Consulte o arquivo [LICENSE](.
 
 ---
 
-**🌟 Se você gostou deste projeto, não se esqueça de dar uma estrela no repositório! Isso nos ajuda a alcançar mais entusiastas e colaboradores.**
+**🌟 Se você gostou, não se esqueça de dar uma estrela no repositório! Isso nos ajuda a alcançar mais entusiastas e colaboradores.**
 
 ---
 
@@ -82,5 +77,5 @@ Este projeto está licenciado sob a licença MIT. Consulte o arquivo [LICENSE](.
 
 Caso tenha alguma dúvida ou sugestão, sinta-se à vontade para abrir uma issue ou me contatar diretamente:
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/seu-usuario)
-[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:seu-email@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)]([https://linkedin.com/in/seu-usuario](https://www.linkedin.com/in/ana-paula-pereira-viana-95293b171/))
+
