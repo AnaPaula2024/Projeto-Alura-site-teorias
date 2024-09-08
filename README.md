@@ -1,9 +1,6 @@
 # 🚀 Busca de Teorias da Conspiração - Imersão Dev Alura com Google Gemini
 
-![download](https://github.com/user-attachments/assets/8ea5ccae-8d91-4d68-8813-b5c2e29a1cfa)
-
-
-### Acesse o projeto online: [Meu Projeto no Vercel]([https://nome-do-projeto.vercel.app](https://projeto-alura-site-teorias.vercel.app/))
+### Acesse o projeto online: [Meu Projeto no Vercel](https://projeto-alura-site-teorias.vercel.app/)
 
 
 Bem-vindo ao repositório do **Projeto de Busca de Teorias da Conspiração**! 🌐 Aqui você pode explorar as mais fascinantes e misteriosas teorias da conspiração conhecidas, tudo em um só lugar. A aplicação permite que os usuários pesquisem, descubram e leiam mais sobre esses tópicos intrigantes de forma rápida e fácil.
