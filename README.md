@@ -77,5 +77,7 @@ Este projeto está licenciado sob a licença MIT. Consulte o arquivo [LICENSE](.
 
 Caso tenha alguma dúvida ou sugestão, sinta-se à vontade para abrir uma issue ou me contatar diretamente:
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)]([https://linkedin.com/in/seu-usuario](https://www.linkedin.com/in/ana-paula-pereira-viana-95293b171/))
+- 📧 **E-mail (Senac):** ana.ppviana@senacsp.edu.br 
+- 📧 **E-mail (Hotmail):** ana.pereira.viana@hotmail.com  
+- 📧 **E-mail (Gmail):** paulinhapv22@gmail.com  
 
