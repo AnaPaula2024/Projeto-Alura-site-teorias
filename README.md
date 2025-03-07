@@ -5,6 +5,9 @@
 
 ### Acesse o projeto online: [Meu Projeto no Vercel](https://projeto-alura-site-teorias.vercel.app/)
 
+![Teorias da Conspiração](https://github.com/AnaPaula2024/Projeto-Alura-site-teorias/blob/main/screencapture-projeto-alura-site-teorias-vercel-app-2025-03-07-19_55_38.png?raw=true)
+
+
 Bem-vindo ao repositório do **Projeto de Busca de Teorias da Conspiração**! 🌐 Aqui você pode explorar as mais fascinantes e misteriosas teorias da conspiração conhecidas, tudo em um só lugar. A aplicação permite que os usuários pesquisem, descubram e leiam mais sobre esses tópicos intrigantes de forma rápida e fácil.
 
 ## 🔍 Sobre o Projeto
