@@ -1,7 +1,9 @@
 # 🚀 Busca de Teorias da Conspiração - Imersão Dev Alura com Google Gemini
+[![Build Status](https://img.shields.io/github/workflow/status/AnaPaula2024/Projeto-Alura-site-teorias/CI?style=flat&logo=github)](https://github.com/AnaPaula2024/Projeto-Alura-site-teorias/actions)
+[![Version](https://img.shields.io/badge/version-1.0.0-blue)](https://github.com/AnaPaula2024/Projeto-Alura-site-teorias)
+[![License](https://img.shields.io/badge/License-MIT-yellow)](https://opensource.org/licenses/MIT)
 
 ### Acesse o projeto online: [Meu Projeto no Vercel](https://projeto-alura-site-teorias.vercel.app/)
-
 
 Bem-vindo ao repositório do **Projeto de Busca de Teorias da Conspiração**! 🌐 Aqui você pode explorar as mais fascinantes e misteriosas teorias da conspiração conhecidas, tudo em um só lugar. A aplicação permite que os usuários pesquisem, descubram e leiam mais sobre esses tópicos intrigantes de forma rápida e fácil.
 
@@ -20,11 +22,11 @@ Esta aplicação foi criada para fornecer uma experiência de busca simples e in
 
 Este projeto foi construído usando as seguintes tecnologias:
 
-- **HTML5:** Estrutura semântica e otimizada para SEO.
-- **CSS3:** Estilização moderna com design responsivo.
-- **JavaScript (ES6+):** Lógica de busca e manipulação dinâmica de conteúdo.
-- **Font Awesome:** Ícones usados na interface para melhorar a experiência visual.
-- **Git & GitHub:** Controle de versão e colaboração.
+![HTML](https://img.shields.io/badge/-HTML-E34F26?style=flat&logo=html5&logoColor=white) Estrutura semântica e otimizada para SEO. <br>
+![CSS](https://img.shields.io/badge/-CSS-1572B6?style=flat&logo=css3&logoColor=white) Estilização moderna com design responsivo. <br>
+![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black) Lógica de busca e manipulação dinâmica de conteúdo. <br>
+![Font Awesome](https://img.shields.io/badge/Font%20Awesome-0062F5?style=flat&logo=font-awesome&logoColor=white) Ícones usados na interface para melhorar a experiência visual. <br>
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white) Controle de versão e colaboração.
 
 ## ⚙️ Como Usar
 
@@ -69,7 +71,7 @@ Este projeto está licenciado sob a licença MIT. Consulte o arquivo [LICENSE](.
 
 ---
 
-**🌟 Se você gostou, não se esqueça de dar uma estrela no repositório! Isso nos ajuda a alcançar mais entusiastas e colaboradores.**
+**🌟 Se você gostou, não se esqueça de dar uma estrela no repositório! Isso ajuda a alcançar mais entusiastas e colaboradores.**
 
 ---
 
@@ -79,5 +81,13 @@ Caso tenha alguma dúvida ou sugestão, sinta-se à vontade para abrir uma issue
 
 - 📧 **E-mail (Senac):** ana.ppviana@senacsp.edu.br 
 - 📧 **E-mail (Hotmail):** ana.pereira.viana@hotmail.com  
-- 📧 **E-mail (Gmail):** paulinhapv22@gmail.com  
+- 📧 **E-mail (Gmail):** paulinhapv22@gmail.com
+
+
+
+
+
+
+
+
 
